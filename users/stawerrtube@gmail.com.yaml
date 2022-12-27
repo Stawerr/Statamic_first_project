@@ -1,0 +1,9 @@
+name: Stawerr
+super: true
+avatar: 1641612637495.jpg
+id: c023909e-bb3c-417d-aef8-1fd1bd9f5886
+password_hash: $2y$10$vfMf.NNLluHVGF0VnjbXsOFGw.j3s/iySzIYwlgPId.XxOKP/DFFq
+preferences:
+  collections:
+    pages:
+      after_save: create_another

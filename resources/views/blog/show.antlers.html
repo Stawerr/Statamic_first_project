@@ -1,0 +1,32 @@
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-6xl font-black leading-none text-left">{{ title }}</h1>
+    <div class="flex space-x-3 mt-8 text-xs font-semibold tracking-widest uppercase">
+        {{ tags }}
+            <a href="{{ url }}" class="bg-black hover:bg-red-800 text-white px-3 py-px">{{ title }}</a>
+        {{ /tags}}
+    </div>
+    <img src="{{ featured_image }}" alt="{{ featured_image:alt }}" class="my-8">
+    <div class="flex items-center my-16">
+        <img src="{{ author:avatar }}" alt="{{ author:name }}" class="h-12 w-12 rounded-full">
+        <div class="leading-tight ml-3">
+            <p class="font-bold">{{ author:name }}</p>
+            <p class="text-sm text-gray-600">{{ date }}</p>
+        </div>
+    </div>
+    <article class="space-y-12 mb-12 content">
+        {{ blog_content }}
+    </article>
+
+    <aside class="border-t-8 border-black my-24 py-8 max-w-2xl mx-auto">
+        <h3 class="text-2xl font-black">Related Articles</h3>
+        {{ if related_posts }}
+            <div class="grid grid-flow-row grid-cols-2 gap-8 my-16">
+                {{ related_posts }}
+                    {{ partial:blog/card hide_image="true" title_class="text-sm"}}
+                {{ /related_posts }} 
+            </div>   
+        {{ else }}
+            <p>Aww shucks, no related articles.</p>
+        {{ /if }}    
+    </aside>
+</div>

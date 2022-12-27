@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ meta_title ?? title }}</title>
+        <meta name="description" content="{{ meta_description }}">
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+    </head>
+    <body class="bg-white font-sans leading-normal text-black">
+            {{ partial:nav }}
+            {{ template_content }}
+        <script src="{{ mix src='/js/site.js' }}"></script>
+    </body>
+</html>
