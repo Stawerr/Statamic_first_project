@@ -1,9 +1,7 @@
-title: Blog
-template: blog/show
+title: Cars
+template: cars/show
 layout: layout
-mount: 03c77803-57ee-40fb-9776-2a08b1b68eb2
-taxonomies:
-  - tags
+mount: f1b3d27a-56bd-4fa6-9dc7-f669a3977064
 revisions: false
 route: '/{mount}/{slug}'
 date: true
